@@ -40,10 +40,10 @@ app.post("/", function(req, res) {
   const JSONData = JSON.stringify(data);
   const options = {
     method :"POST",
-    auth:"Mohan:e04b1ca5370416bfd7f27b261a02b24b-us4"
+//     auth:"Mohan:e04b1ca5370416bfd7f27b261a02b24b-us4"
   };
 
-  const mailChimpUrl = "https://us4.api.mailchimp.com/3.0/lists/68e7d5c53d";
+//   const mailChimpUrl = "https://us4.api.mailchimp.com/3.0/lists/68e7d5c53d";
 
   const postHttp = https.request(mailChimpUrl,options,function(response){
       console.log("status code : "+ response.statusCode);
