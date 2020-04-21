@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
   console.log("server is serving at 3000 port");
 });
 
